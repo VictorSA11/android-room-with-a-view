@@ -33,6 +33,8 @@ limitations under the License. -->
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/darker_gray"
-        tools:listitem="@layout/recyclerview_item"/>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="38dp"
+        tools:listitem="@layout/recyclerview_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

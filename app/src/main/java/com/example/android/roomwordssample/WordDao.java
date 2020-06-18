@@ -18,8 +18,10 @@ package com.example.android.roomwordssample;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
 import java.util.List;
 
@@ -48,6 +50,15 @@ public interface WordDao {
     @Insert
     void insert(Word word);
 
+    @Query("SELECT * from word_table LIMIT 1")
+    LiveData<List<Word>> getAnyWord();
+
     @Query("DELETE FROM word_table")
     void deleteAll();
+
+    @Delete
+    void deleteWord(Word word);
+
+    @Update
+    void updateWord(Word word);
 }

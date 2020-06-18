@@ -34,6 +34,7 @@ public class NewWordActivity extends AppCompatActivity {
 
     private EditText mEditWordView;
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +55,8 @@ public class NewWordActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
     }
 }
 
